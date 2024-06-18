@@ -1,0 +1,94 @@
+header{
+background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(images/leaf.jpg);
+background-size: cover;
+background-position: center top;
+background-attachment: fixed;
+}
+.accordion {
+  display: flex; /* 아코디언 요소들을 가로로 나란히 배치하기 위해 Flexbox 레이아웃을 사용합니다. */
+  flex-direction: column; /* 아코디언 요소들을 세로로 배치합니다. */
+}
+.accordion-button {
+  width: 150%; /* 아코디언 바의 너비를 100%로 설정하여 가로로 길게 늘립니다. */
+  padding: 20px 30px; /* 버튼 내부 여백을 조절합니다. */
+  font-size: 18px; /* 버튼 글자 크기를 조절합니다. */
+}
+.accordion-item {
+  margin-bottom: 20px; /* 각 아코디언 항목 간의 간격을 조절합니다. */
+}
+.container {
+  display: flex; /* Flexbox를 사용하여 내부 요소를 가로로 배치합니다. */
+}
+
+.text {
+  flex: 1; /* 텍스트 요소가 남은 공간을 모두 차지하도록 설정합니다. */
+  padding: 20px; /* 텍스트 요소 주변 여백을 설정합니다. */
+}
+
+.image {
+  flex: 1; /* 이미지 요소가 남은 공간을 모두 차지하도록 설정합니다. */
+  padding: 20px; /* 이미지 요소 주변 여백을 설정합니다. */
+}
+
+.image img {
+  max-width: 50%; /* 이미지가 부모 요소의 너비를 넘어가지 않도록 최대 너비를 설정합니다. */
+  height: auto; /* 이미지의 세로 비율을 유지하면서 가로 너비에 맞게 설정합니다. */
+}
+.accordion-item {
+  margin-bottom: 20px; /* 아코디언 항목 간의 간격 조정 */
+}
+.image {
+  text-align: center; /* 이미지를 가운데 정렬 */
+  margin-top: 20px; /* 이미지 위 여백 */
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px; /* 최대 너비 설정 */
+  margin: auto; /* 가운데 정렬 */
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-body {
+  padding: 10px;
+}
+.navbar {
+  margin-bottom: 20px; /* 네비게이션과 다음 요소 사이의 여백 */
+}
+.search-container {
+  margin-top: 60px; /* 네비게이션과의 여백을 조정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input {
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-button {
+  padding: 10px 20px;
+  margin-left: -50px; /* Negative margin to overlap with the search input */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
